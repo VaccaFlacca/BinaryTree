@@ -1,1 +1,3 @@
-
+#!/bin/bash
+@echo off
+./a.out file1
