@@ -5,23 +5,38 @@ void initialize(binary_tree* bt){
     
 }
 
-bool search(binary_tree* bt, int key){
-    
-    
-    
+node search(binary_tree* bt, int key)
+{
+    node current = bt->root;
+    while (current != NULL)
+    {
+        if (key == current->data)
+        {
+            return current;
+        }
+        else if (key < current->data)
+        {
+            current = current->left;
+        }
+        else
+        {
+            current = current->right;
+        }
+    }
+    return NULL:
 }
 
 void insert(binary_tree* bt, node item)
 {
     if (bt->root == NULL)
     {
-        tree->root = item;
+        bt->root = item;
         item->left = NULL;
         item->right = NULL;
     }
     else 
     {
-        node current = tree->root;
+        node current = bt->root;
         while (current != NULL)
         {
             if (item->data < current->data)
