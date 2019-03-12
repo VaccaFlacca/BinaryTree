@@ -1,3 +1,5 @@
+#ifndef binarytree_h
+#define binarytree_h
 
 void initialize(binary_tree* bt);
 bool search(binary_tree* bt, int key);
@@ -7,3 +9,5 @@ void printpreorder(binary_tree* bt);
 void printpostorder(binary_tree* bt);
 int btsize(binary_tree* bt);
 int treeheight(binary_tree* bt);
+
+#endif
