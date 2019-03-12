@@ -1,1 +1,13 @@
+scrip.exe : main.o binarytree.o
+  gcc main.o binarytree.o -o scrip.exe
+
+main.o : main.c binarytree.c binarytree.h
+  gcc -Wall -c main.c
+
+binarytree.o : binarytree.c binarytree.h
+  gcc -Wall -c binarytree.c
+  
+clean :
+        rm *.o scrip.exe
+
 
