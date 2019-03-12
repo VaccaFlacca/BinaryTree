@@ -3,4 +3,8 @@
 file1=$1
 file2=$2
 file3=$3
-./a.out file1
+NumArg= $#
+if(NumArg != 3){
+  echo "Error Not enough arguments"
+}
+
