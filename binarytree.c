@@ -5,7 +5,7 @@ typedef struct node_struct{
     struct node_struct* right;
 }node;
 
-typedef struct bt{
+typedef struct binary_tree{
     node* root;
     int size;
     int height;
