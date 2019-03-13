@@ -4,7 +4,12 @@ file1=$1
 file2=$2
 file3=$3
 NumArg= $#
-if(NumArg != 3){
+if[NumArg != 3]
+then
   echo "Error Not enough arguments"
-}
+elif [NumArg = 0]
+then
+  echo "No imput file exists"
+fi
+
 
