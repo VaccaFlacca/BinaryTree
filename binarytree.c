@@ -1,5 +1,4 @@
-
-
+#include "binarytree.h"
 
 void initialize(binary_tree* bt){
     
@@ -34,7 +33,7 @@ void insert(binary_tree* bt, node item)
         item->left = NULL;
         item->right = NULL;
     }
-    else 
+    else
     {
         node current = bt->root;
         while (current != NULL)
@@ -46,7 +45,7 @@ void insert(binary_tree* bt, node item)
                     current->left = item;
                     current = NULL;
                 }
-                else 
+                else
                 {
                     current = current->left
                 }
@@ -83,8 +82,9 @@ void printinorder(node item)
     printf("%d ", item->data);
 }
 
-void printpreorder(binary_tree* bt)
+void printpreorder(node item)
 {
+    
 
 }
 
@@ -93,7 +93,13 @@ void printpostorder(binary_tree* bt){
 }
 
 int btsize(binary_tree* bt){
-    
+    node node = bt->root;
+    if (node==NULL){
+        return 0;
+    }
+    else{
+        return(btsize(node->left) + 1 + btsize(node->right));
+    }
 }
 
 int treeheight(binary_tree* bt){
