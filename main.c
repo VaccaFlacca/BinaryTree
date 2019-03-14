@@ -1,6 +1,7 @@
 printf("Print in order\n"); 
 printinorder(&bt);
 printf("\nPrint pre order\n"); 
+printpreorder(&bt);
 printf("\nPrint post order\n"); 
 printpostorder(&bt); 
 printf("\n");
