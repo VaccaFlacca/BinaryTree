@@ -40,7 +40,7 @@ void insert(binary_tree* bt, node item)
     }
     else
     {
-        node current = bt->root;
+        node *current = bt->root;
         while (current != NULL)
         {
             if (item->data < current->data)
