@@ -139,13 +139,12 @@ int treeheight(binary_tree* bt){
    return Maketreeheight(bt->root);
 }
 int Maketreeheight(node *node){
+    int leftH = treeheight(node->left);
+    int rightH = treeheight(node->right);
     if (node == NULL){
         return 0;
     }
-    else{
-        int leftH = treeheight(node->left);
-        int rightH = treeheight(node->right);
-    }
+    
     if (leftH > rightH){
         return(leftH+1);
     }
