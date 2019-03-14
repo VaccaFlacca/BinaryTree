@@ -21,6 +21,7 @@ void inorder(node item);
 void printpreorder(binary_tree* bt);
 void preorder(node item);
 void printpostorder(binary_tree* bt);
+void postorder(node item);
 int btsize(binary_tree* bt);
 int treeheight(binary_tree* bt);
 
