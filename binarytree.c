@@ -1,5 +1,6 @@
 #include "binarytree.h"
 #include <stdlib.h>
+#include <stdbool.h>
 
 void initialize(binary_tree* bt){
     bt->root = malloc(sizeof(Node));
