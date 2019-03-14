@@ -127,7 +127,7 @@ void postorder(node* item){
 }
 
 int btsize(binary_tree* bt){
-    node node = bt->root;
+    node *node = bt->root;
     if (node == NULL){
         return 0;
     }
