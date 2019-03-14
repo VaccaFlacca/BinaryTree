@@ -101,6 +101,11 @@ void preorder(node* item)
 
 }
 
+
+void printpostorder(binary_tree* bt){
+    postorder(bt->root);
+}
+
 void postorder(node* item){
     if(item == NULL){
         return;
