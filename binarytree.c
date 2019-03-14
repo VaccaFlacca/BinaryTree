@@ -84,7 +84,10 @@ void inorder(node* item)
     printinorder(item->left);
     printf("%d ", item->data);
     printinorder(item->right);
-    printf("%d ", item->data);
+}
+
+void printpreorder(binary_tree* bt){
+    preorder(bt->root);
 }
 
 void preorder(node* item)
