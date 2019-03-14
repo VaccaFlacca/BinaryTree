@@ -1,5 +1,6 @@
 #ifndef binarytree_h
 #define binarytree_h
+#include <stdbool.h>
 
 typedef struct node_struct{
     int data;
