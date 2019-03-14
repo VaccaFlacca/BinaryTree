@@ -127,7 +127,7 @@ void postorder(node* item){
 }
 
 int btsize(binary_tree* bt){
-    node *node = bt->root;
+    node node = bt->root;
     if (node == NULL){
         return 0;
     }
@@ -135,8 +135,10 @@ int btsize(binary_tree* bt){
         return(btsize(node->left) + 1 + btsize(node->right));
     }
 }
-
-int treeheight(node *node){
+void treeheight(binary_tree* bt){
+    Maketreeheight(bt->root);
+}
+int Maketreeheight(node *node){
     if (node == NULL){
         return 0;
     }
