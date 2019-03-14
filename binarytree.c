@@ -22,7 +22,7 @@ node search(binary_tree* bt, int key)
             current = current->right;
         }
     }
-    return NULL:
+    return NULL;
 }
 
 void insert(binary_tree* bt, node item)
@@ -94,7 +94,7 @@ void printpostorder(binary_tree* bt){
 
 int btsize(binary_tree* bt){
     node node = bt->root;
-    if (node==NULL){
+    if (node == NULL){
         return 0;
     }
     else{
@@ -103,5 +103,18 @@ int btsize(binary_tree* bt){
 }
 
 int treeheight(binary_tree* bt){
-    
+    node node = bt->root;
+    if (node == NULL){
+        return 0;
+    }
+    else{
+        int leftH = treeheight(node->left);
+        int rightH = treeheight(node->right);
+    }
+    if (leftH > rightH){
+        return(leftH+1);
+    }
+    else{
+        return(rightH+1);
+    }
 }
