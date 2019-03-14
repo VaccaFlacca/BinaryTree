@@ -1,5 +1,7 @@
 int main(){
-
+int found;
+binary_tree bt;  
+  
 printf("Print in order\n"); 
 printinorder(&bt);
 printf("\nPrint pre order\n"); 
