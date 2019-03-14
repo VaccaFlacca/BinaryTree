@@ -135,8 +135,8 @@ int btsize(binary_tree* bt){
         return(btsize(node->left) + 1 + btsize(node->right));
     }
 }
-void treeheight(binary_tree* bt){
-    Maketreeheight(bt->root);
+int treeheight(binary_tree* bt){
+   return Maketreeheight(bt->root);
 }
 int Maketreeheight(node *node){
     if (node == NULL){
