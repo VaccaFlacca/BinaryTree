@@ -9,14 +9,14 @@ void initialize(binary_tree* bt){
 
 
 //searches for a specific value in the binary tree
-node search(binary_tree* bt, int key)
+boolean search(binary_tree* bt, int key)
 {
     node *current = bt->root;
     while (current != NULL)
     {
         if (key == current->data)
         {
-            return current;
+            return TRUE;
         }
         else if (key < current->data)
         {
@@ -27,7 +27,7 @@ node search(binary_tree* bt, int key)
             current = current->right;
         }
     }
-    return NULL;
+    return FALSE;
 }
 
 //Inserts a node holding int into the binary tree
