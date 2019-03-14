@@ -12,4 +12,6 @@ then
   echo "No input file exists"
 fi
 
+./myprogram.exe file1
+
 
