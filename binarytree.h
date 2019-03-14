@@ -19,6 +19,7 @@ void insert(binary_tree* bt, int item);
 void printinorder(binary_tree* bt);
 void inorder(node item);
 void printpreorder(binary_tree* bt);
+void preorder(node item);
 void printpostorder(binary_tree* bt);
 int btsize(binary_tree* bt);
 int treeheight(binary_tree* bt);
