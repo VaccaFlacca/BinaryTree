@@ -53,7 +53,7 @@ void insert(binary_tree* bt, node *item)
                 }
                 else
                 {
-                    current = current->left
+                    current = current->left;
                 }
             }
             else
