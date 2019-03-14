@@ -9,7 +9,7 @@ then
   echo "Error Not enough arguments"
 elif [NumArg = 0]
 then
-  echo "No imput file exists"
+  echo "No input file exists"
 fi
 
 
