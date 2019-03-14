@@ -3,7 +3,7 @@
 #include <stdbool.h>
 
 void initialize(binary_tree* bt){
-    bt->root = malloc(sizeof(Node));
+    bt->root = malloc(sizeof(node));
         bt->size = 0;
 }
 
