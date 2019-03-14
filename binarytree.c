@@ -70,8 +70,12 @@ void insert(binary_tree* bt, node item)
     
 }
 
+void printinorder(binary_tree* bt){
+    inorder(bt->root);
+}
+
 //not so sure about this one
-void printinorder(node item)
+void inorder(node* item)
 {
     if (item == NULL)
     {
@@ -83,7 +87,7 @@ void printinorder(node item)
     printf("%d ", item->data);
 }
 
-void printpreorder(node item)
+void preorder(node* item)
 {
     if (item == NULL){
         return;
@@ -94,7 +98,7 @@ void printpreorder(node item)
 
 }
 
-void printpostorder(node item){
+void postorder(node* item){
     if(item == NULL){
         return;
     }
