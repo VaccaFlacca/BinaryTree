@@ -1,7 +1,8 @@
 #include "binarytree.h"
 
 void initialize(binary_tree* bt){
-    
+    bt->root = malloc(sizeof(Node));
+        bt->size = 0;
 }
 
 node search(binary_tree* bt, int key)
@@ -84,11 +85,22 @@ void printinorder(node item)
 
 void printpreorder(node item)
 {
-    
+    if (item == NULL){
+        return;
+    }
+    printf("%d" , item->data);
+    printpreorder(item->left);
+    printpreorder(item->right);
 
 }
 
-void printpostorder(binary_tree* bt){
+void printpostorder(node item){
+    if(item == NULL){
+        return;
+    }
+    printpostorder(item->left);
+    printpostorder(item->right);
+    printf("%d " , item->data);
     
 }
 
