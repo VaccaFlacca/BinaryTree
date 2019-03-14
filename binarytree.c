@@ -9,7 +9,7 @@ void initialize(binary_tree* bt){
 
 
 //searches for a specific value in the binary tree
-boolean search(binary_tree* bt, int key)
+bool search(binary_tree* bt, int key)
 {
     node *current = bt->root;
     while (current != NULL)
