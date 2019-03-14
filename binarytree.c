@@ -16,7 +16,7 @@ bool search(binary_tree* bt, int key)
     {
         if (key == current->data)
         {
-            return TRUE;
+            return true;
         }
         else if (key < current->data)
         {
@@ -27,7 +27,7 @@ bool search(binary_tree* bt, int key)
             current = current->right;
         }
     }
-    return FALSE;
+    return false;
 }
 
 //Inserts a node holding int into the binary tree
