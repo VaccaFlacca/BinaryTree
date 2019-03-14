@@ -5,6 +5,8 @@ void initialize(binary_tree* bt){
         bt->size = 0;
 }
 
+
+//searches for a specific value in the binary tree
 node search(binary_tree* bt, int key)
 {
     node current = bt->root;
@@ -26,6 +28,7 @@ node search(binary_tree* bt, int key)
     return NULL;
 }
 
+//Inserts a node holding int into the binary tree
 void insert(binary_tree* bt, node item)
 {
     if (bt->root == NULL)
@@ -70,11 +73,12 @@ void insert(binary_tree* bt, node item)
     
 }
 
+//Calls inorder to print out ints in numerical order
 void printinorder(binary_tree* bt){
     inorder(bt->root);
 }
 
-//not so sure about this one
+//prints ints out in numerical order
 void inorder(node* item)
 {
     if (item == NULL)
@@ -86,10 +90,12 @@ void inorder(node* item)
     printinorder(item->right);
 }
 
+//Calls preorder
 void printpreorder(binary_tree* bt){
     preorder(bt->root);
 }
 
+//Prints the root, then the left side of tree, then the right side of tree
 void preorder(node* item)
 {
     if (item == NULL){
@@ -101,11 +107,12 @@ void preorder(node* item)
 
 }
 
-
+//Calls postorder
 void printpostorder(binary_tree* bt){
     postorder(bt->root);
 }
 
+//Prints the left side of tree, then the right side, then the root
 void postorder(node* item){
     if(item == NULL){
         return;
