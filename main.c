@@ -1,6 +1,8 @@
-int main(){
+int main(int argc, char* argv []){
 int found;
-binary_tree bt;  
+binary_tree bt;
+file* file_1;
+file_1 = fopen(argv[1], "r");  
   
 printf("Print in order\n"); 
 printinorder(&bt);
