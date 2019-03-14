@@ -135,7 +135,7 @@ int btsize(binary_tree* bt){
     }
 }
 
-int treeheight(node node){
+int treeheight(node *node){
     if (node == NULL){
         return 0;
     }
