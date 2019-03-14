@@ -12,7 +12,7 @@ typedef struct binary_tree{
     node* root;
     int size;
     int height;
-}bt;
+}binary_tree;
 
 void initialize(binary_tree* bt);
 bool search(binary_tree* bt, int key);
