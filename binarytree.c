@@ -31,7 +31,7 @@ bool search(binary_tree* bt, int key)
 }
 
 //Inserts a node holding int into the binary tree
-void insert(binary_tree* bt, node item)
+void insert(binary_tree* bt, node *item)
 {
     if (bt->root == NULL)
     {
